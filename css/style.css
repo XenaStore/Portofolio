@@ -632,6 +632,25 @@ section {
   
 }
 
+.footer-custom {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.footer-custom a {
+  color: white;     
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-custom a:hover {
+  text-decoration: underline;
+}
+
 
 /* ===== MEDIA QUERY ===== */
 @media (max-width: 768px) {
