@@ -8,13 +8,6 @@
   
 }
 
-html, body{
-  max-width: 100%;
-  overlow-x: hidden;
-  background: #0F172a;
-  color: #ffffff;
-}
-
 /* sosial icon bootstrap */
 .contact-info .social-icons {
   margin-top: 20px;
@@ -660,15 +653,7 @@ section {
 
 /* ===== MEDIA QUERY ===== */
 @media (max-width: 768px) {
-  .hero-text h1,
-  .hero-text h4
-  .hero-text p,
-  .btn-glow,
-  hiro-img,
   .hero .container,
-  .social-icons {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
   .about-content {
     flex-direction: column;
     text-align: center;
@@ -683,3 +668,109 @@ section {
     align-items: center;
   }
 }
+
+/* ==== RESPONSIVE DESIGN UNTUK MOBILE ==== */
+@media (max-width: 768px) {
+
+  /* Umum: hilangkan overflow horizontal */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Layout hero */
+  .hero .container {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-text h1,
+  .hero-text h4,
+  .hero-text p,
+  .btn-glow {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero-img {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .glow-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Navbar */
+  .nav-links {
+    width: 90%;
+    right: 5%;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  /* Sosial Media Icons */
+  .social-icons {
+    padding-left: 0 !important;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* About Section */
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  /* Skills */
+  .skills-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .technical-skills,
+  .professional-skills {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .circle-skill {
+    grid-template-columns: 1fr; /* 1 kolom di HP */
+    gap: 15px;
+  }
+
+  /* Project Card */
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  /* Contact Section */
+  .contact-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer-custom {
+    font-size: 14px;
+  }
+}
+
