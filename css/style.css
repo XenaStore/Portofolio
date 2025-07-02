@@ -1,0 +1,652 @@
+/* ===== RESET DAN DASAR ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* sosial icon bootstrap */
+.contact-info .social-icons {
+  margin-top: 20px;
+  padding-left: 20px;
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+}
+
+ .social-icons {
+  margin-top: 20px;
+  padding-left: 40px;
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.social-icons a:hover { 
+  color: #0ff;
+}
+
+.container h2 span {
+  color: cyan;
+}
+
+body {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-right: 30px;
+  background: rgba(15, 23, 42, 0.9);
+  padding: 10px 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 20px;
+}
+
+/* Sembunyikan di layar besar */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #0ff;
+  cursor: pointer;
+}
+
+/* Tampilkan hanya saat layar kecil */
+.navbar ul {
+  margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* hide menu by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 200px;
+    background: #1e293b;
+    padding: 1rem;
+    border-radius: 5ppx;
+    box-shadow: 0 0 10px #0ff;
+    gap: 15px;
+    z-index: 999;
+  }
+}
+
+.nav-links.show-menu {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    padding: 0;
+  }
+  
+  .menu-toggle {
+    display: none; /* sembunyikan hamburger di desktop */
+  }
+}
+
+
+.nav-links {
+  list-style: none;
+  display: none;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #0ff;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  height: 100vh;
+  padding-top: 100px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  align-items: center;
+}
+
+.hero .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  color: #0ff;
+  margin-left: 40px;
+}
+
+.hero-text h4 {
+  color: #cbd5e1;
+  margin-left: 40px;
+}
+
+.hero-text p {
+  color: #94a3b8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.btn-glow {
+  border: none;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #0ff;
+  color: #000;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 0 15px #0ff;
+  transition: 0.3s;
+  margin-left: 40px;
+}
+
+.btn-glow:hover {
+  background: #06d6d6;
+  box-shadow: 0 0 25px #0ff, 0 0 50px #0ff;
+}
+
+.hero-img {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.glow-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #0ff;
+  box-shadow: 0 0 20px #0ff, 0 0 60px #0ff, 0 0 100px #0ff;
+  background: #fff;
+  padding: 10px;
+}
+
+/* ===== ABOUT SECTION ===== */
+#about .container {
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.about-content .hero-text {
+  max-width: 500px;
+}
+
+.about-content p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* ===== SKILLS SECTION ===== */
+#skills h3 {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 50px ;
+  position: relative;
+  margin-top: 250px;
+}
+
+#skills h3 span {
+  color: cyan;
+}
+#skills h2 {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px ;
+  position: relative;
+  margin-top: 50px;
+}
+#skills h2 span {
+  color: cyan;
+}
+.my-services-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.my-skills-title {
+  font-size: 28px;
+  color: #0ff;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+/* Tambahan jarak antara judul dan paragraf pada card */
+.skill-card h4 {
+  margin-bottom: 12px;  /* jarak antara judul dan paragraf */
+}
+
+.my-skills-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.skill-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  /* Agar button dan paragraf punya jarak yang konsisten dan button sejajar */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px; /* buat semua card sama tinggi */
+}
+
+.skill-card p {
+  margin-top: 10px;
+  color: #cbd5e1;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.skill-card a{
+  display: block;
+  margin: 20px auto;
+}
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px #0ff;
+}
+
+.skill-icon {
+
+  width: 60px;
+  height: 60px;
+  font-size: 32px; /* ukuran isi icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px auto; /* tengah + bawah */
+  color: white;            /* warna icon */
+  border-radius: 50%;
+}
+
+
+.skills-section {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+.professional-skills {
+    flex: 1 1 300px;
+  max-width: 400px;
+  color: white;
+  margin-right: 10px;
+}
+
+.technical-skills {
+    flex: 1 1 300px;
+  max-width: 400px;
+  color: white;
+  margin-left: 20px;
+}
+
+.technical-skills h4,
+.professional-skills h4 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.technical-skills h4::after,
+.professional-skills h4::after {
+    content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background: #fff; /* Warna garis cyan */
+  margin: 8px auto 0; /* Tengah dan beri jarak atas */
+  border-radius: 2px;
+}
+/* List Technical Skills */
+.technical-skills ul {
+  list-style: none;
+  padding: 0;
+  font-weight: 600;
+  color: #fff;
+}
+
+.technical-skills li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Bar skill */
+.bar {
+  display: inline-block;
+  background: #1e293b;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 12px;
+  width: 50%;
+  margin-left: 10px;
+  position: relative;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: #0ff;
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+/* Circle skill container */
+.circle-skill {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Bulatan untuk professional skills */
+.circle-skill a {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #1e293b;
+  color: #fff;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 10px #0ff;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+
+  /*agar bulat sempurna */
+  box-sizing: border-box;
+  padding: 100;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.circle-skill a span {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #0ff;
+}
+
+.circle-skill a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #0ff;
+}
+
+
+.btn-glow {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #0ff;
+  color: #000;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 0 15px #0ff;
+  transition: 0.3s;
+  text-align: center;
+  /* supaya button selalu di bawah */
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.btn-glow:hover {
+  background: #06d6d6;
+  box-shadow: 0 0 25px #0ff, 0 0 50px #0ff;
+}
+
+.btn-center {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.technical-skills,
+.professional-skills {
+  flex: 1 1 400px;
+}
+
+.technical-skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.technical-skills li {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.bar {
+  display: block;
+  background: #1e293b;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 5px;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: #0ff;
+  border-radius: 30px;
+}
+
+.circle-skill {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.circle-skill div {
+  border: 2px solid #0ff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  background: #1e293b;
+  box-shadow: 0 0 10px #0ff;
+}
+
+/* ===== PORTFOLIO ===== */
+#portfolio h2 {
+  text-align: center;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: #1e293b;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #0ff;
+  width: 300px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card p {
+  padding: 15px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #0ff;
+}
+
+/* ===== CONTACT ===== */
+#contact {
+  margin-left: 20px;
+  color: white;
+}
+.container h2 span {
+  color: cyan;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.contact-info {
+  flex: 1 1 350px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #cbd5e1;
+}
+
+.contact-info strong {
+  color: #0ff;
+}
+
+.contact-form {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  resize: none;
+}
+
+.contact-form button {
+  cursor: pointer;
+  
+}
+
+
+/* ===== MEDIA QUERY ===== */
+@media (max-width: 768px) {
+  .hero .container,
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-section {
+    flex-direction: column;
+  }
+
+  .my-skills-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
