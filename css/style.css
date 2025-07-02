@@ -8,6 +8,13 @@
   
 }
 
+html, body{
+  max-width: 100%;
+  overlow-x: hidden;
+  background: #0F172a;
+  color: #ffffff;
+}
+
 /* sosial icon bootstrap */
 .contact-info .social-icons {
   margin-top: 20px;
@@ -653,7 +660,15 @@ section {
 
 /* ===== MEDIA QUERY ===== */
 @media (max-width: 768px) {
+  .hero-text h1,
+  .hero-text h4
+  .hero-text p,
+  .btn-glow,
+  hiro-img,
   .hero .container,
+  .social-icons {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
   .about-content {
     flex-direction: column;
     text-align: center;
