@@ -775,3 +775,37 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+    margin-left: 0 !important;
+  }
+
+  .hero-text h1,
+  .hero-text h4,
+  .hero-text p,
+  .btn-glow {
+    margin-left: 0 !important;
+  }
+
+  .btn-glow {
+    margin: 20px auto 0 auto !important;
+    display: block;
+  }
+
+  .hero-img {
+    margin-left: 0 !important;
+    justify-content: center;
+  }
+
+  .about-content .hero-text {
+    text-align: center;
+  }
+
+  #about .btn-glow {
+    margin: 20px auto 0 auto !important;
+    display: block;
+  }
+}
+
+
