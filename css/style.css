@@ -80,6 +80,7 @@ section {
   font-size: 28px;
   color: #0ff;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 /* Tampilkan hanya saat layar kecil */
