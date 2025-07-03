@@ -97,11 +97,11 @@ section {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 0px;
-    width: 200px;
+    right: 0;
+    width: 108px;
     background: #1e293b;
     padding: 1rem;
-    border-radius: 5ppx;
+    border-radius: 5px;
     box-shadow: 0 0 10px #0ff;
     gap: 15px;
     z-index: 999;
@@ -261,7 +261,7 @@ section {
   font-size: 28px;
   margin-bottom: 50px ;
   position: relative;
-
+  margin-top: 250px;
 }
 
 #skills h3 span {
@@ -646,24 +646,7 @@ section {
   cursor: pointer;
   
 }
-.footer-custom {
-  background-color: #212529; /* setara bg-dark */
-  color: white;              /* setara text-white */
-  text-align: center;        /* setara text-center */
-  padding-top: 1rem;         /* setara py-3 */
-  padding-bottom: 1rem;
-  margin-top: 3rem;          /* setara mt-5 */
-}
 
-.footer-custom a {
-  color: white;              /* setara text-white */
-  text-decoration: none;     /* setara text-decoration-none */
-  margin: 0 0.5rem;
-}
-
-.footer-custom a:hover {
-  text-decoration: underline;
-}
 
 /* ===== MEDIA QUERY ===== */
 @media (max-width: 768px) {
@@ -682,37 +665,3 @@ section {
     align-items: center;
   }
 }
-
-@media (max-width: 768px) {
-  .hero-text {
-    text-align: center;
-    margin-left: 0 !important;
-  }
-
-  .hero-text h1,
-  .hero-text h4,
-  .hero-text p,
-  .btn-glow {
-    margin-left: 0 !important;
-  }
-
-  .btn-glow {
-    margin: 20px auto 0 auto !important;
-    display: block;
-  }
-
-  .hero-img {
-    margin-left: 0 !important;
-    justify-content: center;
-  }
-
-  .about-content .hero-text {
-    text-align: center;
-  }
-
-  #about .btn-glow {
-    margin: 20px auto 0 auto !important;
-    display: block;
-  }
-}
-
