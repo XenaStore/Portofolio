@@ -97,8 +97,8 @@ section {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 10px;
-    width: 30vw;
+    right: 0;
+    width: 108px;
     background: #1e293b;
     padding: 1rem;
     border-radius: 5px;
