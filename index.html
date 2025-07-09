@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
+  <title>Ryan</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   
@@ -34,10 +35,10 @@
     <div class="container">
       <div class="hero-text">
         <h4>Hello, It's Me</h4>
-        <h1>Xena</h1>
+        <h1>M. Suryanto</h1>
         <h4><span class="typed-text"></span><span class="cursor">|</span></h4>
-        <p>I am a computer science student passionate in design and frontend dev</p>
-        <div class="social-icons">
+        <p> I am a Computer Science student with a strong interest in design and frontend development. </p>
+       <div class="social-icons">
   <a href="https://www.instagram.com/xenaxml" target="_blank" rel="noopener noreferrer">
     <i class="bi bi-instagram"></i>
   </a>
@@ -71,7 +72,11 @@
           <img src="img/LOGO.png" alt="My Image" class="glow-img">
         </div>
         <div class="hero-text">
-          <p>I am a Computer Science Student and I'm passionate in web development, design, and creative tech. I love building responsive & interactive websites that combine tech and art. I aim to contribute to impactful projects and continue learning.</p>
+          <p>I am a Computer Science student currently learning and growing in the world of web development, design, and creative technology. Although I am still in the early stages, I am passionate about building responsive and interactive websites—blending technology and art to create engaging user experiences.
+
+I’m particularly interested in how technology can be used creatively, especially in designing interfaces that not only function well but also look appealing and are easy to use. Right now, I’m actively learning various modern tools and frameworks to strengthen my skills in this field.
+
+I believe that learning is a continuous journey. That’s why I constantly explore new things, follow tutorials, work on small projects, and remain open to collaborative experiences. My hope is to contribute to real-world projects, broaden my horizons, and become part of a meaningful tech community.</p>
           <a href="#contact" class="btn-glow">Contact Me</a>
         </div>
       </div>
@@ -112,19 +117,19 @@
   <div class="technical-skills">
     <h4>Technical Skills</h4>
     <ul>
-      <li>HTML <span class="bar"><span style="width:90%"></span></span></li>
-      <li>CSS <span class="bar"><span style="width:80%"></span></span></li>
-      <li>JavaScript <span class="bar"><span style="width:70%"></span></span></li>
-      <li>PHP <span class="bar"><span style="width:60%"></span></span></li>
-      <li>Python <span class="bar"><span style="width:50%"></span></span></li>
+      <li>HTML <span class="bar"><span style="width:70%"></span></span></li>
+      <li>CSS <span class="bar"><span style="width:50%"></span></span></li>
+      <li>JavaScript <span class="bar"><span style="width:30%"></span></span></li>
+      <li>Python <span class="bar"><span style="width:40%"></span></span></li>
+      <li>Adobe Ilustrator <span class="bar"><span style="width:30%"></span></span></li>
     </ul>
   </div>
   <div class="professional-skills">
     <h4>Professional Skills</h4>
     <div class="circle-skill">
-      <a>Creativity<br/><span>90%</span></a>
-      <a>Communication<br/><span>80%</span></a>
-      <a>Team Work<br/><span>75%</span></a>
+      <a>Creativity<br/><span>75%</span></a>
+      <a>Communication<br/><span>70%</span></a>
+      <a>Team Work<br/><span>85%</span></a>
       <a>Problem Solving<br/><span>85%</span></a>
     </div>
   </div>
@@ -138,19 +143,19 @@
       <h2>Latest <span> Project</span></h2>
       <div class="project-list">
         <div class="project-card">
-          <img src="img/LOGO.png" alt="My Image">
-
+          <img src="img/uxui-preview.png" alt="UX/UI Design">
           <p>UX/UI Design.</p>
+
         </div>
         <div class="project-card">
-          <img src="img/LOGO.png" alt="My Image">
-
+          <img src="img/design-preview.jpg" alt="Graphic Design">
           <p>Graphic Design.</p>
+
         </div>
         <div class="project-card">
-          <img src="img/LOGO.png" alt="My Image">
-
+          <img src="img/fronted-preview.jpg" alt="Fronted Dev">
           <p>Fronted Dev.</p>
+
         </div>
       </div>
     </div>
@@ -162,11 +167,12 @@
       <h2>Contact <span> Me </span></h2>
       <div class="contact-content">
         <div class="contact-info">
-          <p>Let's work together!
+          <p> Let's work together!
           I'm always open to new opportunities, collaborations, and exciting projects.
           Whether you have a question, a freelance project, or just want to say hi — feel free to reach out via the contact form or through my social media channels below.
-          I’ll get back to you as soon as possible!.</p>
-          <div class="social-icons">
+          I’ll get back to you as soon as possible!. </p>
+
+         <div class="social-icons">
   <a href="https://www.instagram.com/xenaxml" target="_blank" rel="noopener noreferrer">
     <i class="bi bi-instagram"></i>
   </a>
@@ -179,23 +185,29 @@
   <a href="mailto:m.suryanto2023@gmail.com" target="_blank" rel="noopener noreferrer">
     <i class="bi bi-envelope"></i>
   </a>
-  <a href="https://wa.me/6281237153749" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/6287720256409" target="_blank" rel="noopener noreferrer">
     <i class="bi bi-whatsapp"></i>
   </a>
 </div>
         </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Enter Your Name" />
-          <input type="email" placeholder="Enter Your Email" />
-          <input type="text" placeholder="Enter Your Subject" />
-          <textarea placeholder="Enter Your Message"></textarea>
-          <button type="submit" class="btn-glow">Submit</button>
-        </form>
+       <form id="contact-form" class="contact-form">
+  <input type="text" id="name" name="name" placeholder="Nama" required />
+  <input type="email" id="email" name="email" placeholder="Email" required />
+  <input type="text" id="subject" name="subject" placeholder="Subjek" required />
+  <textarea id="message" name="message" placeholder="Pesan" required></textarea>
+  <button type="submit" class="btn-glow">Submit</button>
+</form>
+
+
       </div>
     </div>
   </section>
+   <footer class="footer-custom">
+    &copy; 2025 Ryan Frontend Web Developer. All Rights Reserved |
+  <a href="#">About Me</a> |
+  <a href="#">Terms & Conditions</a>
+</footer>
 
-  <script src="js/script.js"></script>
-  
+  <script src="js/scripts.js"></script>
 </body>
 </html>
