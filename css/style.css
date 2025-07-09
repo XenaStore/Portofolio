@@ -97,11 +97,11 @@ section {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 0;
-    width: 108px;
+    right: 0px;
+    width: 200px;
     background: #1e293b;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 5ppx;
     box-shadow: 0 0 10px #0ff;
     gap: 15px;
     z-index: 999;
@@ -151,15 +151,13 @@ section {
   background: linear-gradient(135deg, #0f172a, #1e293b);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 10px;
 }
 
 .hero .container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -208,16 +206,8 @@ section {
 .hero-img {
   flex: 1 1 300px;
   display: flex;
-  justify-content: flex-end;
-  margin-left: 40px;
-
-}
-#about .hero-img {
-  flex: 1 1 300px;
-  display: flex;
   justify-content: center;
-  margin-left: 0;
-  margin-top: 40px;
+  margin-left: 250px;
 }
 
 .glow-img {
@@ -250,7 +240,14 @@ section {
 .about-content p {
   color: #cbd5e1;
   line-height: 1.6;
-  margin-top: 40px;
+}
+
+#about .hero-img {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  margin-bottom: 10px;
 }
 
 /* ===== SKILLS SECTION ===== */
@@ -261,7 +258,7 @@ section {
   font-size: 28px;
   margin-bottom: 50px ;
   position: relative;
-  margin-top: 250px;
+
 }
 
 #skills h3 span {
@@ -296,7 +293,8 @@ section {
 
 /* Tambahan jarak antara judul dan paragraf pada card */
 .skill-card h4 {
-  margin-bottom: 12px;  /* jarak antara judul dan paragraf */
+  margin-bottom: 20px;  /* jarak antara judul dan paragraf */
+  
 }
 
 .my-skills-cards {
@@ -434,6 +432,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
   justify-items: center;
+  
 }
 
 /* Bulatan untuk professional skills */
@@ -451,11 +450,13 @@ section {
 
   /*agar bulat sempurna */
   box-sizing: border-box;
+  padding: 100;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: -10px;
+  
   transition: transform 0.3s ease;
   cursor: default;
 }
@@ -556,6 +557,7 @@ section {
 /* ===== PORTFOLIO ===== */
 #portfolio h2 {
   text-align: center;
+  margin-top: 20px;
 }
 .project-list {
   display: flex;
@@ -574,6 +576,9 @@ section {
   text-align: center;
   color: white;
   transition: transform 0.3s ease;
+  flex-direction: column;
+  display: flex;
+  height: 450px;
 }
 
 .project-card img {
@@ -585,6 +590,7 @@ section {
   padding: 15px;
   font-size: 14px;
   color: #cbd5e1;
+  margin-top: auto;
 }
 
 .project-card:hover {
@@ -647,6 +653,25 @@ section {
   
 }
 
+/* footer */
+.footer-custom {
+  background-color: #212529; /* setara bg-dark */
+  color: white;              /* setara text-white */
+  text-align: center;        /* setara text-center */
+  padding-top: 1rem;         /* setara py-3 */
+  padding-bottom: 1rem;
+  margin-top: 3rem;          /* setara mt-5 */
+}
+
+.footer-custom a {
+  color: white;              /* setara text-white */
+  text-decoration: none;     /* setara text-decoration-none */
+  margin: 0 0.5rem;
+}
+
+.footer-custom a:hover {
+  text-decoration: underline;
+}
 
 /* ===== MEDIA QUERY ===== */
 @media (max-width: 768px) {
@@ -665,3 +690,38 @@ section {
     align-items: center;
   }
 }
+
+/* === Media Query: Posisi Tengah Tombol Hero & About di Mobile === */
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+    margin-left: 0 !important;
+  }
+
+  .hero-text h1,
+  .hero-text h4,
+  .hero-text p,
+  .btn-glow {
+    margin-left: 0 !important;
+  }
+
+  .btn-glow {
+    margin: 20px auto 0 auto !important;
+    display: block;
+  }
+
+  .hero-img {
+    margin-left: 0 !important;
+    justify-content: center;
+  }
+
+  .about-content .hero-text {
+    text-align: center;
+  }
+
+  #about .btn-glow {
+    margin: 20px auto 0 auto !important;
+    display: block;
+  }
+}
+
